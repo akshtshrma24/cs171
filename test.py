@@ -9,7 +9,6 @@ print(single_data.keys())
 print("header: " + str(single_data.get("__header__")))
 print("version: " + str(single_data.get("__version__")))
 print("global: " + str(single_data.get("__globals__")))
-# print("B0005: " + str(single_data.get("B0005")))
 
 time = []
 voltage = []
@@ -22,9 +21,12 @@ voltage = []
 current = []
 temperature = []
 
-f = open("readable.txt", "a")
+temp = b0005_data[0][0][0][0][2]
 
-for i in b0005_data:
+
+f = open("readable2.txt", "a")
+
+for i in temp:
     f.write(str(i))
 
 print("go check readable.txt for readable format of B0005.mat file")
