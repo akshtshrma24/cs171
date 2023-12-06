@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 #                 print(f"Keys in {file}: {data.keys()}")
 
 # Analysing a single file
-first_file = "/Users/nachikethmamidi/Documents/Fall2023/CS171/MLProject/Data/1. BatteryAgingARC-FY08Q4/B0005.mat"
+first_file = "./Data/1. BatteryAgingARC-FY08Q4/B0005.mat"
 # single_data = io.loadmat(first_file)
 
 # data_mat = single_data["B0005"]
